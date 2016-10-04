@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MyApp">
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="app.js"type="text/javascript">
+    <style media="screen">
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
 
-    </script>
   </head>
-  <body>
+  <body ng-controller="homeController as vm" ng-cloak>
+    <!-- <input type="text" ng-model="message">
+    {{message}}
+    {{vm.message}} -->
+    <!-- <ul>
+      <li ng-repeat="friend in vm.friends">{{friend}}</li>
+    </ul> -->
+    <!-- <table>
+      <tr>
+        <th>Year</th>
+        <th>Make</th>
+        <th>Model</th>
+      </tr>
+      <tr ng-repeat="car in vm.cars">
+        <td>{{car.year}}</td>
+        <td>{{car.make}}</td>
+        <td>{{car.model}}</td>
+      </tr>
+    </table> -->
+    <h2>What is your favorite color?</h2>
+    <button type="button" name="button" ng-click="vm.pickColor('red')">Red</button>
+    <button type="button" name="button" ng-click="vm.pickColor('blue')">Blue</button>
+    <button type="button" name="button" ng-click="vm.pickColor('green')">Green</button>
+    <h2>Your favorite color.</h2>
+    <output>{{vm.color}}</output>
+    <h2>Add two Numbers</h2>
+    <input type="number" ng-model="x">
+    <input type="number" ng-model="y">
+    <button ng-click="vm.addNumbers(x,y)">add</button>
+    <button ng-click="vm.subNumbers(x,y)">sub</button>
+    <button ng-click="vm.multNumbers(x,y)">Times</button>
+    <button ng-click="vm.divNumbers(x,y)">Divide</button>
+    <button ng-click="vm.divNumbers(x,y)">Mod</button>
+    <p>{{vm.anwser}}</p>
 
+    <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script src="app.js"type="text/javascript"></script>
   </body>
 </html>
