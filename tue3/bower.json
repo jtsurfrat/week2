@@ -1,0 +1,21 @@
+{
+  "name": "tue",
+  "homepage": "https://github.com/jtsurfrat/week2",
+  "authors": [
+    "Jenna <jtsurfrat@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}

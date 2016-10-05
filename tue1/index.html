@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="MyApp">
+<html ng-app="MovieApp">
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+
   </head>
-  <body ng-controller="homeController as vm">
-    {{vm.dog}}
-    <script src="bower_components/angular/angular.min.js" type="text/javascript">
+  <body ng-controller="MovieListController as vm">
 
-    </script>
-    <script type="text/javascript" src="app.js">
+    <ul>
+      <li ng-repeat="movie in vm.movies">{{movie.title}}</li>
+    </ul>
 
-    </script>
   </body>
 </html>

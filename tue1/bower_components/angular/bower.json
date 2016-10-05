@@ -1,9 +1,22 @@
 {
-  "name": "angular",
+  "name": "Angular-Simple",
   "version": "1.5.8",
   "license": "MIT",
-  "main": "./angular.js",
-  "ignore": [],
-  "dependencies": {
-  }
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/jtsurfrat/week2",
+  "authors": [
+    "jc"
+  ],
+  "description": "index.html",
+  "keywords": [
+    "MEAN"
+  ]
 }

@@ -1,9 +1,13 @@
-namespace App {
-  angular.module("MyApp", []);
+namespace MyApp {
+  //angular.module("MyApp", []);
+  angular.module('MovieApp', []);
 
-  class HomeController{
-    //console.log('stuff');
-    public dog = "stuff";
-  }
-  angular.module("MyApp").controller("homeController", HomeController);
+  // class HomeController{
+  //   //console.log('stuff');
+  //   public dog = "stuff";
+  // }
 }
+
+// namespace MyApp {
+//   angular.module('MovieApp', []);
+// }

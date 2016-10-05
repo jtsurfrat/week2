@@ -1,0 +1,6 @@
+<h2>products List</h2>
+<ul>
+  <li ng-repeat="product in controller.products">
+    <a ui-sref="Details({id:product.id})">{{product.name}}</a>
+  </li>
+</ul>
