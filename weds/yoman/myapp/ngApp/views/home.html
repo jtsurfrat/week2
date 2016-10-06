@@ -1,0 +1,13 @@
+<h2>Home</h2>
+<p>
+    <!-- {{controller.message}} -->
+    {{controller.tax}}
+</p>
+<p>
+  {{controller.randomFortune}}
+</p>
+<ul>
+  <!-- <li ng-repeat="item in controller.food | filter:'i'">{{item}}</li> -->
+  <!-- <li ng-repeat="item in controller.food">{{item.name}} {{item.price | currency}} {{item.dateCreated | date:"fullDate"}}</li> -->
+  <li ng-repeat="item in controller.food | startsWith:'m'">{{item}}</li>
+</ul>
