@@ -1,7 +1,7 @@
 namespace myapp.Controllers {
 
     export class HomeController {
-        public message = 'Hello from the home page Bye!';
+        //public message = 'Hello from the home page Bye!';
     }
 
 
