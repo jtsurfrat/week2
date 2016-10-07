@@ -1,0 +1,15 @@
+<p>
+  Edit movies
+</p>
+<form ng-submit="controller.editMovie()">
+  <div>
+    <label for="title">Title</label>
+    <input ng-model="controller.movieToEdit.title">
+  </div>
+  <div>
+    <label>director</label>
+    <input id="director" ng-model="controller.movieToEdit.director">
+  </div>
+  <input type="submit" value="Save">
+
+</form>

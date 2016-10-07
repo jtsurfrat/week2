@@ -1,0 +1,14 @@
+<p>
+  Add a new guest
+</p>
+<form ng-submit="controller.addGuest()">
+  <div>
+    <label for="title">Title</label>
+    <input ng-model="controller.createGuest.author">
+  </div>
+  <div>
+    <label>director</label>
+    <!-- <input id="director" ng-model="controller.createGuest.guests"> -->
+  </div>
+  <input type="submit" value="Save">
+</form>
