@@ -1,9 +1,10 @@
 namespace upload {
 
-    angular.module('upload', ['ui.router', 'ngResource', 'ui.bootstrap']).config((
+    angular.module('upload', ['ui.router', 'ngResource', 'ui.bootstrap', 'angular-filepicker']).config((
         $stateProvider: ng.ui.IStateProvider,
         $urlRouterProvider: ng.ui.IUrlRouterProvider,
-        $locationProvider: ng.ILocationProvider
+        $locationProvider: ng.ILocationProvider,
+        filepickerProvider
     ) => {
         // Define routes
         $stateProvider
@@ -29,8 +30,11 @@ namespace upload {
 
         // Enable HTML5 navigation
         $locationProvider.html5Mode(true);
+
+        // addng filepicker api key
+        filepickerProvider.setKey("ApKMWpBaRQd2wQ6r9xA0Qz");
     });
 
-    
+
 
 }
