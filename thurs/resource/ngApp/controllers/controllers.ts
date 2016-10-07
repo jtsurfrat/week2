@@ -75,7 +75,7 @@ namespace resource.Controllers {
 
     editGuest(){
       this.guestService.saveGuest(this.guestToEdit).then(
-        () => this.$state.go("guestbook")
+        () => this.$state.go("guessbook")
       )
     }
     constructor(private guestService: resource.Services.GuestService,
@@ -89,7 +89,7 @@ namespace resource.Controllers {
 
     deleteGuest2(){
       this.guestService.deleteGuest(this.guestToDelete.id).then(() => {
-        this.$state.go("guestbook");
+        this.$state.go("guessbook");
       })
     }
     constructor(private guestService: resource.Services.GuestService,
